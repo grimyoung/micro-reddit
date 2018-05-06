@@ -1,24 +1,23 @@
-# README
+#Micro-Reddit Project
+This project is a very brief back-end implementation of [Reddit](https://www.reddit.com/) using Rails models and associations.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project from [The Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-with-active-record-ruby-on-rails)
 
-Things you may want to cover:
+##Data Models
+Users
+  Should have an unique username that is not empty.
+  Has many Posts and Comments
 
-* Ruby version
+Posts
+  Should have a title and a body that are not empty.
+  Has only one User
+  Has many Comments
 
-* System dependencies
+Comments
+  Should have a body that is not empty.
+  Has only one User
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+###Revisit topics
+Maybe implement front-end?
+Users should also have a password
+How to create nesting comments?
